@@ -1,0 +1,31 @@
+.routes {
+    width: 235px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -175px;
+    transition: left 0.5s;
+}
+
+.menu {
+    background-color: #bf7c7c;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu .active {
+    font-weight: bold;
+}
+
+.routes:hover {
+    left: 0;
+}
+
+.btn {
+    background-color: aqua;
+    padding: 10px;
+}

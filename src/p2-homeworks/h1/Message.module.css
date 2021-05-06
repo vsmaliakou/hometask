@@ -2,6 +2,8 @@
     margin: 10px 0 0 10px;
     background: greenyellow;
     color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .img {
@@ -10,7 +12,6 @@
     height: 40px;
     border-radius: 30px;
     border: 1px solid gray;
-    float: left;
     margin: 48px 10px 0 0;
 }
 
@@ -18,14 +19,13 @@
     height: 55px;
     width: 190px;
     background-color: green;
-    float: left;
     margin-top: 30px;
     border-radius: 5px;
     padding-left: 10px;
     padding-top: 5px;
 }
 
-.content::after {
+.content::before {
     content: "";
     z-index: 0;
     position: absolute;
