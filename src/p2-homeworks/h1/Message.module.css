@@ -1,0 +1,50 @@
+.message {
+    margin: 10px 0 0 10px;
+    background: greenyellow;
+    color: white;
+}
+
+.img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    float: left;
+    margin: 48px 10px 0 0;
+}
+
+.content {
+    height: 55px;
+    width: 190px;
+    background-color: green;
+    float: left;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.content::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 140px;
+    left: 57px;
+    border: 10px solid transparent;
+    border-right: 10px solid green;
+    border-bottom: 10px solid green;
+}
+
+.name {
+    color: blueviolet;
+}
+
+.time {
+    color: gray;
+    position: relative;
+    left: 155px;
+    bottom: 5px;
+    z-index: 1;
+    font-size: 12px;
+}
