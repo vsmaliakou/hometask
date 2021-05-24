@@ -1,14 +1,20 @@
-const initState = {
+type InitStateType = typeof initState
+type ActionType = ReturnType<typeof loadingAC>
 
+const initState = {
+    isLoading: false
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+export const loadingReducer = (state = initState, action: ActionType): InitStateType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case 'HW/SET-LOADING': {
+            return {
+                ...state,
+                isLoading: action.isLoading
+            }
         }
         default: return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+export const loadingAC = (isLoading: boolean) => ({type: 'HW/SET-LOADING', isLoading} as const) // fix any
